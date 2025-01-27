@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Digital Frontier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="text-white overflow-x-hidden">
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        class="fixed top-0 left-0 w-full h-full z-0 opacity-20" 
+        viewBox="0 0 1440 810" 
+        preserveAspectRatio="none"
+    >
+        <defs>
+            <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4299e1;stop-opacity:0.1" />
+                <stop offset="100%" style="stop-color:#9f7aea;stop-opacity:0.1" />
+            </linearGradient>
+            <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(66,153,225,0.05)" stroke-width="1"/>
+            </pattern>
+        </defs>
+        <rect width="1440" height="810" fill="url(#bg-gradient)"/>
+        <rect width="1440" height="810" fill="url(#grid)"/>
+        <g opacity="0.3">
+            <circle cx="200" cy="100" r="50" fill="rgba(159,122,234,0.1)" />
+            <circle cx="1200" cy="700" r="80" fill="rgba(246,135,179,0.1)" />
+        </g>
+    </svg>
+    
+    <nav class="fixed w-full z-50 bg-black/40 backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-3xl font-bold gradient-text">NEXUS</div>
+            <div class="space-x-6">
+                <a href="#" class="text-gray-300 hover:text-blue-300 transition">Home</a>
+                <a href="#" class="text-gray-300 hover:text-blue-300 transition">Solutions</a>
+                <a href="#" class="text-gray-300 hover:text-blue-300 transition">Technology</a>
+                <a href="#" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center text-center pt-16">
+        <div class="container mx-auto px-4 relative z-20">
+            <h1 class="text-7xl font-extrabold gradient-text mb-6">
+                Reimagine Digital Transformation
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                Pioneering innovative solutions that merge advanced technologies, AI, and human-centric design.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-lg hover:from-blue-700 hover:to-purple-700 transition flex items-center group">
+                    <i data-feather="zap" class="mr-2 group-hover:animate-pulse"></i> Explore Innovations
+                </button>
+                <button class="border-2 border-blue-400 text-blue-400 px-10 py-4 rounded-lg hover:bg-blue-950/50 transition flex items-center group">
+                    <i data-feather="code" class="mr-2 group-hover:animate-spin"></i> Our Technologies
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-4 py-16 relative z-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-black/50 backdrop-blur-lg p-8 rounded-3xl border border-blue-900/30 hover:border-blue-500/50 transition transform hover:-translate-y-4 hover:scale-105">
+                <i data-feather="cpu" class="w-20 h-20 text-blue-400 mb-6"></i>
+                <h2 class="text-3xl font-semibold mb-4 gradient-text">Advanced AI</h2>
+                <p class="text-gray-300">Intelligent systems that learn, adapt, and transform your digital ecosystem.</p>
+            </div>
+            <div class="bg-black/50 backdrop-blur-lg p-8 rounded-3xl border border-green-900/30 hover:border-green-500/50 transition transform hover:-translate-y-4 hover:scale-105">
+                <i data-feather="shield" class="w-20 h-20 text-green-400 mb-6"></i>
+                <h2 class="text-3xl font-semibold mb-4 gradient-text">Cyber Resilience</h2>
+                <p class="text-gray-300">Cutting-edge security frameworks protecting your digital assets.</p>
+            </div>
+            <div class="bg-black/50 backdrop-blur-lg p-8 rounded-3xl border border-purple-900/30 hover:border-purple-500/50 transition transform hover:-translate-y-4 hover:scale-105">
+                <i data-feather="globe" class="w-20 h-20 text-purple-400 mb-6"></i>
+                <h2 class="text-3xl font-semibold mb-4 gradient-text">Global Solutions</h2>
+                <p class="text-gray-300">Seamless digital infrastructure connecting businesses worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/50 backdrop-blur-md py-12 relative z-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2024 Aliimn. All Innovations Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

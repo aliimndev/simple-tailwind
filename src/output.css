@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #4299e1, #9f7aea, #f687b3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
